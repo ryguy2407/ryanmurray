@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="259px" height="54px" viewBox="0 0 259 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>RedDesign</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.06 0.11 595.28 0.11 595.28 842 0.06 842"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RedDesign" transform="translate(-34.000000, -447.000000)">
+            <g id="Group-4">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <polygon id="Fill-3" fill="#FFFFFE" mask="url(#mask-2)" points="0.06 634.11 595.28 634.11 595.28 0.11 0.06 0.11"></polygon>
+            </g>
+            <path d="M61.05,453.963 L61.05,473.563 L41.451,473.563 C51,471.033 58.521,463.513 61.05,453.963 Z M34.364,473.563 L34.364,501.171 C47.16,501.171 57.923,492.461 61.05,480.645 L61.05,501.171 L88.658,501.171 C88.658,488.376 79.949,477.613 68.137,474.483 L88.658,474.483 C88.658,459.548 76.79,447.38 61.971,446.893 L61.05,446.877 L34.364,446.877 L34.364,473.563 L34.364,473.563 Z" id="Fill-93" fill="#D91D4B"></path>
+            <text id="Ryan-Murray" font-family="Sansation-Bold, Sansation" font-size="33.8863" font-weight="bold" letter-spacing="0.0004" fill="#343534">
+                <tspan x="98" y="491">Ryan </tspan>
+                <tspan x="183.975249" y="491" font-family="Sansation-Regular, Sansation" font-weight="normal">Murray</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
