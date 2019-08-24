@@ -2,16 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Page;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
-class PagesController extends Controller
+class BlocksController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return Response
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
@@ -21,7 +19,7 @@ class PagesController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return Response
+     * @return \Illuminate\Http\Response
      */
     public function create()
     {
@@ -32,7 +30,7 @@ class PagesController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return Response
+     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
@@ -42,37 +40,19 @@ class PagesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param null $slug
-     *
-     * @return Response
-     * @internal param Page $page
-     *
-     * @internal param int $id
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
      */
-    public function show($slug = null)
+    public function show($id)
     {
-        // If a slug is provided then retrieve that page
-        // return 404 if it doesn't exist
-        if($slug) {
-            $page = Page::where('slug', $slug)->first();
-
-            if ( ! $page ) {
-                abort( 404 );
-            }
-        } else {
-            $page = Page::where('slug', 'home')->first();
-        }
-        return view('pages.show')->with([
-            'page' => $page,
-            'sections' => $page->sections
-        ]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return Response
+     * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
@@ -84,7 +64,7 @@ class PagesController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return Response
+     * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
@@ -95,7 +75,7 @@ class PagesController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return Response
+     * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {

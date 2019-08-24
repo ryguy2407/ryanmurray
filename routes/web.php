@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('/', 'PagesController@show');
 
 Route::resource('page', 'PagesController');
 
