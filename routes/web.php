@@ -11,7 +11,13 @@
 |
 */
 
-Route::get('/', 'PagesController@show');
+//STATIC PAGES
+Route::get('/', function(){
+	return view('pages.home');
+});
+Route::get('/about', function(){
+	return view('pages.about');
+});
 
 Route::resource('page', 'PagesController');
 

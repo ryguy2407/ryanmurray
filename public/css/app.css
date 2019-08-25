@@ -1,8 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);a {
+@import url(https://fonts.googleapis.com/css?family=Nunito);p.large {
+  font-size: 24px;
+}
+
+a {
   color: #D91D4B;
 }
 
 blockquote {
   text-align: center;
+}
+
+div.card h3 {
+  margin: 15px 0;
 }
 

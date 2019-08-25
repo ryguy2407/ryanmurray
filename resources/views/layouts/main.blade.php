@@ -32,7 +32,7 @@
                 <a class="nav-link" href="#">My Work</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">My Clients</a>
+                <a class="nav-link" href="#">My CV</a>
             </li>
         </ul>
     </div>
