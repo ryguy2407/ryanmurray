@@ -26,3 +26,14 @@ ul.pagination {
   justify-content: center !important;
 }
 
+button.link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #D91D4B;
+}
+
+button.link:hover {
+  color: #0056b3;
+}
+

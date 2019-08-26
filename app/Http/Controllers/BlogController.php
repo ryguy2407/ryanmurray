@@ -9,7 +9,6 @@ class BlogController extends Controller
 {
     public function __construct()
     {
-        $this->authorizeResource(Blog::class, 'create');
     }
 
     /**
@@ -19,7 +18,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Blog::paginate(9);
+        return view('blog.index')->with('posts', $posts);
     }
 
     /**
@@ -29,7 +29,9 @@ class BlogController extends Controller
      */
     public function create()
     {
+        $this->authorize('create', Blog::class);
 
+        return view('blog.create');
     }
 
     /**
@@ -40,6 +42,8 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
+        $this->authorize('create', Blog::class);
+
         $blog = Blog::create($request->all());
         return redirect(route('blog.show', $blog->id));
     }
@@ -52,7 +56,8 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Blog::find($id);
+        return view('blog.show')->with('post', $post);
     }
 
     /**

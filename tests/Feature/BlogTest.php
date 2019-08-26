@@ -60,4 +60,19 @@ class BlogTest extends TestCase
         $this->actingAs($user);
         $this->createPost()->assertRedirect('/blog/1');
     }
+
+    public function testBlogPageDisplaysPosts()
+    {
+        $response = $this->get('blog');
+        $response->assertStatus(200);
+    }
+
+    public function testGuestCanReadPost()
+    {
+        $post = factory(Blog::class)->create();
+        $response = $this->get(route('blog.show', $post->id));
+        $response->assertStatus(200);
+        $response->assertSee($post->title);
+
+    }
 }

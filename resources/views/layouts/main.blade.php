@@ -7,10 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" href="/css/app.css">
-
     <link rel="icon" href="/img/icon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 
     <title>Ryan Murray - Web Developer - Brisbane, Queensland, Australia</title>
 </head>
@@ -34,12 +35,28 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">My CV</a>
             </li>
+            @if(Auth::user())
+                <li class="nav-item">
+                    <form action="/logout" method="post" class="p-2">
+                        {{ csrf_field() }}
+                        <button class="link">Hi {{ Auth::user()->name }} | Logout?</button>
+                    </form>
+                </li>
+            @else
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+            @endif
         </ul>
     </div>
 </header>
 
 <div class="container">
     @yield('content')
+
+    <hr class="my-5">
+
+    <p class="text-center mb-5">
+        <a href="http://laravel.com" target="_blank">Proudly built using Laravel</a> - Ryan Murray 2019
+    </p>
 </div>
 
 <!-- Optional JavaScript -->
