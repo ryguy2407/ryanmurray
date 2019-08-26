@@ -2,10 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
+    public function __construct()
+    {
+        $this->authorizeResource(Blog::class, 'create');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -23,7 +29,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -34,7 +40,8 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $blog = Blog::create($request->all());
+        return redirect(route('blog.show', $blog->id));
     }
 
     /**

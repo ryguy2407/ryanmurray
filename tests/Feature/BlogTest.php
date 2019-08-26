@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Blog;
+use App\User;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -10,6 +11,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class BlogTest extends TestCase
 {
     use RefreshDatabase;
+    use WithFaker;
 
     /**
      * A sanity test to make sure test DB is working
@@ -24,11 +26,38 @@ class BlogTest extends TestCase
         ]);
     }
 
+    public function createPost()
+    {
+        $attributes = [
+            'title' => $this->faker->sentence(),
+            'slug' => $this->faker->slug(),
+            'content' => $this->faker->text(),
+            'featured_image' => $this->faker->imageUrl()
+        ];
+
+        return $this->post('/blog', $attributes);
+    }
+
     public function testOnlyUserCanCreateBlogPost()
     {
-        //User log in
+        $this->createPost()->assertRedirect('/login');
+    }
 
-        //Test redirected
+    public function testGuestCannotCreatePost()
+    {
+        $user = factory(User::class)->create();
+        $this->actingAs($user);
+        $this->createPost()->assertRedirect('/login');
+    }
 
+    public function testAdminCanCreatePost()
+    {
+        $user = factory(User::class)->create();
+
+        $user->roles = 'admin';
+        $user->save();
+
+        $this->actingAs($user);
+        $this->createPost()->assertRedirect('/blog/1');
     }
 }

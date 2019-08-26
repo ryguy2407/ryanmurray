@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddFeatureImageToBlogPostTable extends Migration
+class AddRoleToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddFeatureImageToBlogPostTable extends Migration
      */
     public function up()
     {
-        Schema::table('blogs', function (Blueprint $table) {
-            $table->string('featured_image')->nullable();
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('roles')->default('guest');
         });
     }
 
@@ -25,7 +25,7 @@ class AddFeatureImageToBlogPostTable extends Migration
      */
     public function down()
     {
-        Schema::table('blogs', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             //
         });
     }

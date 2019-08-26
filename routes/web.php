@@ -20,6 +20,8 @@ Route::get('/about', function(){
 	return view('pages.about');
 });
 
-Route::resource('page', 'PagesController');
+//Auth Routes
+Auth::routes();
 
-Route::get('{id}', 'PagesController@show');
+Route::resource('blog', 'BlogController');
+
