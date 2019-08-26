@@ -18,7 +18,17 @@ blockquote {
 
 div.card {
 
+  transition: background 0.5s ease;
+  &:hover {
+    background: #fcfcfc;
+  }
+
   h3 {
     margin: 15px 0;
   }
+}
+
+ul.pagination {
+  -webkit-box-pack: center!important;
+  justify-content: center!important;
 }

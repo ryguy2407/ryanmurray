@@ -13,7 +13,8 @@
 
 //STATIC PAGES
 Route::get('/', function(){
-	return view('pages.home');
+	$posts = \App\Blog::paginate(8);
+	return view('pages.home')->with('posts', $posts);
 });
 Route::get('/about', function(){
 	return view('pages.about');

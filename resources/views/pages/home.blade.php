@@ -79,9 +79,35 @@
 
     <h2 class="text-center mb-5">Some of my thoughts on things...</h2>
 
+    @foreach ($posts->chunk(2) as $post)
+        <div class="row">
+            @foreach ($post as $post)
+                <div class="col mb-5">
+                    <div class="row">
+                        <div class="col">
+                            <h5>
+                                <a href="#">{{ $post->title }}</a>
+                            </h5>
+                            <p>
+                                {{ $post->excerpt($post->content) }}
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a href="#">
+                                <img src="{{ $post->featured_image }}" style="width: 100%;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    @endforeach
+
+    {{ $posts->links() }}
+
     <hr class="my-5">
 
-    <p class="text-center">
+    <p class="text-center mb-5">
         <a href="http://laravel.com" target="_blank">Proudly built using Laravel</a> - Ryan Murray 2019
     </p>
 
