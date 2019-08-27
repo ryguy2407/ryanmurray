@@ -7,11 +7,25 @@ use App\User;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\Utilities\UserActionsTrait;
 
 class BlogTest extends TestCase
 {
     use RefreshDatabase;
     use WithFaker;
+    use UserActionsTrait;
+
+    public function createPost()
+    {
+        $attributes = [
+            'title' => $this->faker->sentence(),
+            'slug' => $this->faker->slug(),
+            'content' => $this->faker->text(),
+            'featured_image' => $this->faker->imageUrl()
+        ];
+
+        return $this->post('/blog', $attributes);
+    }
 
     /**
      * A sanity test to make sure test DB is working
@@ -26,35 +40,8 @@ class BlogTest extends TestCase
         ]);
     }
 
-    public function createPost()
-    {
-        $attributes = [
-            'title' => $this->faker->sentence(),
-            'slug' => $this->faker->slug(),
-            'content' => $this->faker->text(),
-            'featured_image' => $this->faker->imageUrl()
-        ];
 
-        return $this->post('/blog', $attributes);
-    }
-
-    public function loginAsAdmin()
-    {
-        $user = factory(User::class)->create();
-
-        $user->roles = 'admin';
-        $user->save();
-
-        $this->actingAs($user);
-    }
-
-    public function loginAsGuest()
-    {
-        $user = factory(User::class)->create();
-        $this->actingAs($user);
-    }
-
-    public function testOnlyUserCanCreateBlogPost()
+    public function testNotLoggedInCannotCreatePost()
     {
         $this->createPost()->assertRedirect('/login');
     }
@@ -69,9 +56,7 @@ class BlogTest extends TestCase
     public function testAdminCanCreatePost()
     {
         $this->withoutExceptionHandling();
-
         $this->loginAsAdmin();
-
         $this->createPost()->assertRedirect('/blog/1');
     }
 

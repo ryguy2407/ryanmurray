@@ -24,4 +24,5 @@ Route::get('/about', function(){
 Auth::routes();
 
 Route::resource('blog', 'BlogController');
+Route::resource('work', 'WorkController');
 
