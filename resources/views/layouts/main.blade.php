@@ -38,7 +38,7 @@
                 <a class="nav-link" href="#">My Work</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">My CV</a>
+                <a class="nav-link" href="https://drive.google.com/open?id=1iACw1bb06MsRLsqrmUfipJMao1UhpT-V" target="_blank">My CV</a>
             </li>
             @if(Auth::user())
                 <li class="nav-item">

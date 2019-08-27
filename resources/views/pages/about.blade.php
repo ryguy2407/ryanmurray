@@ -17,7 +17,7 @@
                     time capacity, and as a freelancer.
                 </p>
                 <p>
-                    You can download a copy of my <a href="#">CV here</a>, most recently I was
+                    You can download a copy of my <a href="https://drive.google.com/open?id=1iACw1bb06MsRLsqrmUfipJMao1UhpT-V" target="_blank">CV here</a>, most recently I was
                     contracted by digital agency <a href="http://newwordorder.com.au" target="_blank">New Word Order</a>
                     on a freelance basis.
                 </p>
