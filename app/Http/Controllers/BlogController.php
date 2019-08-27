@@ -66,7 +66,11 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        $post = Blog::find($id);
+        if(is_numeric($id)) {
+            $post = Blog::find($id);
+        } else {
+            $post = Blog::where( 'slug', $id )->first();
+        }
         return view('blog.show')->with('post', $post);
     }
 
