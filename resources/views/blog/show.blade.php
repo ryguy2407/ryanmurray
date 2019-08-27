@@ -2,6 +2,12 @@
 
 @section('content')
 
+    <div style="position: absolute;top:20px;right:20px;">
+        @can('update', $post)
+            <a class="btn btn-primary" href="{{ route('blog.edit', $post->id) }}">Edit this post</a>
+        @endcan
+    </div>
+
     <div class="pt-5">
         <h2 class="text-center">
             {{ $post->title }}
