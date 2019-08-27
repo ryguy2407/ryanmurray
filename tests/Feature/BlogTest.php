@@ -38,6 +38,22 @@ class BlogTest extends TestCase
         return $this->post('/blog', $attributes);
     }
 
+    public function loginAsAdmin()
+    {
+        $user = factory(User::class)->create();
+
+        $user->roles = 'admin';
+        $user->save();
+
+        $this->actingAs($user);
+    }
+
+    public function loginAsGuest()
+    {
+        $user = factory(User::class)->create();
+        $this->actingAs($user);
+    }
+
     public function testOnlyUserCanCreateBlogPost()
     {
         $this->createPost()->assertRedirect('/login');
@@ -52,12 +68,10 @@ class BlogTest extends TestCase
 
     public function testAdminCanCreatePost()
     {
-        $user = factory(User::class)->create();
+        $this->withoutExceptionHandling();
 
-        $user->roles = 'admin';
-        $user->save();
+        $this->loginAsAdmin();
 
-        $this->actingAs($user);
         $this->createPost()->assertRedirect('/blog/1');
     }
 
@@ -74,5 +88,26 @@ class BlogTest extends TestCase
         $response->assertStatus(200);
         $response->assertSee($post->title);
 
+    }
+
+    public function testAdminCanEditPost()
+    {
+        $post = factory(Blog::class)->create();
+        $this->loginAsAdmin();
+
+        $response = $this->get(route('blog.edit', $post->id));
+
+        $response->assertStatus(200);
+        $response->assertSee($post->title);
+    }
+
+    public function testGuestCannotEditPost()
+    {
+        $post = factory(Blog::class)->create();
+        $this->loginAsGuest();
+
+        $response = $this->get(route('blog.edit', $post->id));
+
+        $response->assertRedirect('/login');
     }
 }

@@ -4,7 +4,7 @@
 
     <div class="pt-5">
         <h2 class="text-center">
-            I'm (34 <span style="font-size: 16px">automatically calculated from DOB</span>) have
+            I'm ({{ get_age() }} old <span style="font-size: 16px">automatically calculated from DOB</span>) have
             been married seven years and have two beautiful boys, and one fur baby.
         </h2>
         <hr class="my-5">

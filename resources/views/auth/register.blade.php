@@ -8,6 +8,7 @@
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
+                    <h4 class="text-center">No new registrations at this time</h4>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 

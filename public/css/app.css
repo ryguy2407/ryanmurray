@@ -8,6 +8,13 @@ a {
 
 blockquote {
   text-align: center;
+  font-size: 24px;
+  background: #f7f7f7;
+  padding: 10px;
+}
+
+blockquote p {
+  margin-bottom: 0px;
 }
 
 div.card {

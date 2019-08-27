@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -45,6 +46,15 @@ class BlogController extends Controller
         $this->authorize('create', Blog::class);
 
         $blog = Blog::create($request->all());
+
+        if ($request->hasFile('featured_image')) {
+            $path = $request->featured_image->store( 'images' );
+            $blog->update( [
+                'featured_image' => $path
+            ] );
+
+            $blog->save();
+        }
         return redirect(route('blog.show', $blog->id));
     }
 
@@ -68,7 +78,9 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Blog::find($id);
+        $this->authorize('update', $post);
+        return view('blog.edit')->with('post', $post);
     }
 
     /**
@@ -80,7 +92,22 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->authorize('update', Blog::class);
+
+        $post = Blog::find($id);
+        $post->update($request->all());
+
+        if ($request->hasFile('featured_image')) {
+            $path = $request->featured_image->store( 'images' );
+            $post->update( [
+                'featured_image' => $path
+            ] );
+        }
+
+        $post->save();
+
+        return redirect(route('blog.show', $id));
+
     }
 
     /**

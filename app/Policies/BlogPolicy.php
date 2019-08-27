@@ -63,6 +63,9 @@ class BlogPolicy
      */
     public function update(User $user, Blog $blog)
     {
+        if($user->roles == 'admin') {
+            return true;
+        }
         return false;
     }
 

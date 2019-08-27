@@ -19,7 +19,9 @@
 
 <header>
     <div class="logo text-center py-5">
-        <img src="/img/logo.svg" alt="" width="300">
+        <a href="/">
+            <img src="/img/logo.svg" alt="" width="300">
+        </a>
     </div>
     <div class="container">
         <ul class="nav justify-content-center">
@@ -28,6 +30,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/about">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Articles</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">My Work</a>
@@ -55,7 +60,7 @@
     <hr class="my-5">
 
     <p class="text-center mb-5">
-        <a href="http://laravel.com" target="_blank">Proudly built using Laravel</a> - Ryan Murray 2019
+        <a href="http://laravel.com" target="_blank">Proudly built using Laravel</a> - Ryan Murray {{ date('Y') }}
     </p>
 </div>
 

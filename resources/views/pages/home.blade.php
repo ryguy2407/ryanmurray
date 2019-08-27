@@ -89,14 +89,16 @@
                                 <a href="{{ route('blog.show', $post->id) }}">{{ $post->title }}</a>
                             </h5>
                             <p>
-                                {{ $post->excerpt($post->content) }}
+                                @parsedown($post->excerpt($post->content))
                             </p>
                         </div>
-                        <div class="col">
-                            <a href="{{ route('blog.show', $post->id) }}">
-                                <img src="{{ $post->featured_image }}" style="width: 100%;">
-                            </a>
-                        </div>
+                        @if($post->featured_image)
+                            <div class="col">
+                                <a href="{{ route('blog.show', $post->id) }}">
+                                    <img style="width: 100%;" src="{{ asset('storage/'.$post->featured_image) }}">
+                                </a>
+                            </div>
+                        @endif
                     </div>
                 </div>
             @endforeach
