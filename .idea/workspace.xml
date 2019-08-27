@@ -22,14 +22,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WorkTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/WorkTest.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/works/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7187879">
-              <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-              <folding>
-                <element signature="e#33#46#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.33939394">
+              <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,7 +80,6 @@
         <option value="$PROJECT_DIR$/resources/views/blog/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/WorkController.php" />
-        <option value="$PROJECT_DIR$/resources/views/works/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_27_093933_create_works_table.php" />
@@ -90,6 +87,7 @@
         <option value="$PROJECT_DIR$/tests/Utilities/UserActionsTrait.php" />
         <option value="$PROJECT_DIR$/tests/Feature/BlogTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/WorkTest.php" />
+        <option value="$PROJECT_DIR$/resources/views/works/index.blade.php" />
       </list>
     </option>
   </component>
@@ -1422,18 +1420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/works/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23757575">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding>
-            <marker date="1566898941185" expanded="true" signature="45:209" placeholder="..." />
-            <marker date="1566898941185" expanded="true" signature="68:206" placeholder="..." />
-            <marker date="1566898941185" expanded="true" signature="102:168" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5090909">
@@ -1570,8 +1556,24 @@
         <state vertical-scroll-proportion="0.7187879">
           <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
           <folding>
-            <element signature="e#33#46#0#PHP" expanded="true" />
+            <marker date="1566900320011" expanded="true" signature="37:162" placeholder="..." />
+            <marker date="1566900320011" expanded="true" signature="195:1029" placeholder="{...}" />
+            <marker date="1566900320011" expanded="true" signature="275:570" placeholder="{...}" />
+            <marker date="1566900320011" expanded="true" signature="305:511" placeholder="..." />
+            <marker date="1566900320011" expanded="true" signature="579:665" placeholder=" A sanity test to make sure test DB is working ..." />
+            <marker date="1566900320011" expanded="true" signature="710:862" placeholder="{...}" />
+            <marker date="1566900320011" expanded="true" signature="798:854" placeholder="..." />
+            <marker date="1566900320011" expanded="true" signature="808:853" placeholder="..." />
+            <marker date="1566900320011" expanded="true" signature="917:1027" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/works/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33939394">
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
