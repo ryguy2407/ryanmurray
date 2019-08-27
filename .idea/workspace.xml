@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <file leaf-file-name="main.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7368421">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.5430303">
+              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -68,7 +68,6 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/app/Helpers/functions.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/about.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
@@ -85,6 +84,7 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
       </list>
     </option>
   </component>
@@ -284,6 +284,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ryanmurray" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ryanmurray" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -815,32 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74666667">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-          <folding>
-            <marker date="1566791328473" expanded="true" signature="31:2994" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="38:796" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="803:2986" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="813:2066" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="853:955" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="874:944" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="983:2056" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="1031:2045" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="1065:1144" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="1178:1259" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="1293:1369" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="1403:1478" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="1512:1585" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="1653:1908" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="1723:1886" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="2091:2301" placeholder="..." />
-            <marker date="1566791328473" expanded="true" signature="2170:2294" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40727273">
@@ -1307,6 +1303,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7368421">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <marker date="1566864286976" expanded="true" signature="116:138" placeholder="{...}" />
+            <marker date="1566864286976" expanded="true" signature="142:164" placeholder="{...}" />
+            <marker date="1566864286976" expanded="true" signature="177:296" placeholder="{...}" />
+            <marker date="1566864286976" expanded="true" signature="265:294" placeholder="{...}" />
+            <marker date="1566864286976" expanded="true" signature="307:420" placeholder="{...}" />
+            <marker date="1566864286976" expanded="true" signature="356:386" placeholder="{...}" />
+            <marker date="1566864286976" expanded="true" signature="393:418" placeholder="{...}" />
+            <marker date="1566864286976" expanded="true" signature="436:514" placeholder="{...}" />
+            <marker date="1566864286976" expanded="true" signature="528:635" placeholder="{...}" />
+            <marker date="1566864286976" expanded="true" signature="610:633" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5430303">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
           <folding />
         </state>
       </provider>
