@@ -15,7 +15,7 @@
                         <div class="row">
                             <div class="col">
                                 <h5>
-                                    <a href="{{ route('blog.show', $post->id) }}">{{ $post->title }}</a>
+                                    <a href="{{ route('blog.show', $post->slug) }}">{{ $post->title }}</a>
                                 </h5>
                                 <p>
                                     @parsedown($post->excerpt($post->content))
@@ -23,7 +23,7 @@
                             </div>
                             @if($post->featured_image)
                                 <div class="col">
-                                    <a href="{{ route('blog.show', $post->id) }}">
+                                    <a href="{{ route('blog.show', $post->slug) }}">
                                         <img style="width: 100%;" src="{{ asset('storage/'.$post->featured_image) }}">
                                     </a>
                                 </div>
