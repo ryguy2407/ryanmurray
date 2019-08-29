@@ -26,10 +26,10 @@
     <div class="container">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" href="/">Home</a>
+                <a class="nav-link active" href="{{ secure_url('/') }}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">About Me</a>
+                <a class="nav-link" href="{{ secure_url('about') }}">About Me</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
