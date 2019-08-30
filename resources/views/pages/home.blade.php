@@ -75,6 +75,11 @@
         </div>
     </div>
 
+    <div class="text-center mt-5">
+        <a href="{{ secure_url('work') }}" class="btn btn-primary text-white">See all of my recent work</a>
+    </div>
+
+
     <hr class="my-5">
 
     <h2 class="text-center mb-5">Some of my thoughts on things...</h2>
