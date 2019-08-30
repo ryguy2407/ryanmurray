@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Work;
 use Illuminate\Http\Request;
 
 class WorkController extends Controller
@@ -13,7 +14,8 @@ class WorkController extends Controller
      */
     public function index()
     {
-        return view('works.index');
+        $works = Work::paginate(9);
+        return view('works.index')->with('works', $works);
     }
 
     /**
@@ -23,7 +25,9 @@ class WorkController extends Controller
      */
     public function create()
     {
-        //
+        $this->authorize('create', Work::class);
+
+        return view('works.create');
     }
 
     /**
@@ -34,7 +38,19 @@ class WorkController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->authorize('create', Work::class);
+
+        $work = Work::create($request->all());
+
+        if ($request->hasFile('featured_image')) {
+            $path = $request->featured_image->store( 'images' );
+            $work->update( [
+                'featured_image' => $path
+            ] );
+
+            $work->save();
+        }
+        return redirect(route('work.show', $work->id));
     }
 
     /**
@@ -45,7 +61,12 @@ class WorkController extends Controller
      */
     public function show($id)
     {
-        //
+        if(is_numeric($id)) {
+            $work = Work::find($id);
+        } else {
+            $work = Work::where('slug', $id )->first();
+        }
+        return view('works.show')->with('work', $work);
     }
 
     /**
@@ -56,7 +77,9 @@ class WorkController extends Controller
      */
     public function edit($id)
     {
-        //
+        $work = Work::find($id);
+        $this->authorize('update', $work);
+        return view('works.edit')->with('work', $work);
     }
 
     /**
@@ -68,7 +91,22 @@ class WorkController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->authorize('update', Work::class);
+
+        $work = Work::find($id);
+        $work->update($request->all());
+
+        if ($request->hasFile('featured_image')) {
+            $path = $request->featured_image->store( 'images' );
+            $work->update( [
+                'featured_image' => $path
+            ] );
+        }
+
+        $work->save();
+
+        return redirect(route('work.show', $id));
+
     }
 
     /**

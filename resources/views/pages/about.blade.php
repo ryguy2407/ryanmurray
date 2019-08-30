@@ -4,8 +4,7 @@
 
     <div class="pt-5">
         <h2 class="text-center">
-            I'm ({{ get_age() }} old <span style="font-size: 16px">automatically calculated from DOB</span>) have
-            been married seven years and have two beautiful boys, and one fur baby.
+            My story so far...
         </h2>
         <hr class="my-5">
         <div class="row">
@@ -26,7 +25,8 @@
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
                 <p>
-                    Since the arrival of our first child in 2015, I have taken time
+                    I've been working in web development since 2009. Since the
+                    arrival of our first child in 2015, I have taken time
                     away from the office to raise our two children. In that time
                     I have still been working on web projects, just not in a full
                     time capacity, and as a freelancer.
