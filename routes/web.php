@@ -14,7 +14,7 @@
 //STATIC PAGES
 Route::get('/', function(){
 	$posts = \App\Blog::paginate(8);
-	$tag = \App\Tag::find(1);
+	$tag = \App\Tag::where('name', 'Featured')->first();
 	return view('pages.home')->with([
 		'posts' => $posts,
 		'tag' => $tag
