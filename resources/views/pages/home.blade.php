@@ -22,57 +22,25 @@
 
     <hr class="my-5">
 
-    <h2 class="text-center mb-5">Here is some stuff I've worked on...</h2>
+    <h2 class="text-center mb-5">Here is some sites I've worked on...</h2>
 
     <div class="row">
-        <div class="col-lg">
-            <div class="card">
-                <a href="http://vision.org.au" target="_blank">
-                    <img src="/img/vision.jpg" alt="Vision Christian Radio" style="width: 100%;">
-                </a>
-                <div class="p-4">
-                    <h3 class="text-center">Vision Radio</h3>
-                    <p>
-                        A website I built using Wordpress Multi-Site while working at
-                        <a href="http://newwordorder.com.au" target="_blank">New Word Order.</a>
-                        This site utilised custom API's and JSON datafeeds to display live streamed
-                        content.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg">
-            <div class="card">
-                <a href="http://amgsuper.com.au" target="_blank">
-                    <img src="/img/amg.jpg" alt="AMG Super" style="width: 100%;">
-                </a>
-                <div class="p-4">
-                    <h3 class="text-center">AMG Super</h3>
-                    <p>
-                        A super fund website, built while I was at
-                        <a href="http://newwordorder.com.au" target="_blank">New Word Order.</a>
-                        This site featured an integrated PDF generator that prefilled PDF's from
-                        online forms as well as a premium calculator using JS.
-                    </p>
-                </div>
 
-            </div>
-        </div>
-        <div class="col-lg">
-            <div class="card">
-                <img src="/img/daynes.jpg" alt="Daynes Property" style="width: 100%;">
-                <div class="p-4">
-                    <h3 class="text-center">Daynes Property</h3>
-                    <p>
-                        This site is still under construction but is largely finished.
-                        Built on <a href="http://statamic.com" target="_blank">Statamic</a>
-                        I created a custom addon to fetch listings from
-                        <a href="https://www.geteagle.com.au/" target="_blank">EAGLE CRM</a>
-                        that updates listings via a cron schedule.
-                    </p>
+        @foreach($tag->works as $work)
+            <div class="col-lg">
+                <div class="card">
+                    <a href="{{ route('work.show', $work->slug) }}">
+                        <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}" class="mb-5 rounded mx-auto d-block">
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-center">{{ $work->title }}</h3>
+                        <p>
+                            @parsedown($work->excerpt($work->content))
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        @endforeach
     </div>
 
     <div class="text-center mt-5">

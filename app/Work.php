@@ -13,4 +13,9 @@ class Work extends Model
 	{
 		return Str::words($value, 20);
 	}
+
+	public function tags()
+	{
+		return $this->morphMany('App\Tag', 'taggable');
+	}
 }
