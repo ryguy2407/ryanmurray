@@ -22,13 +22,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WorkTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/WorkTest.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/works/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36716792">
-              <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.20363636">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
               <folding>
-                <element signature="e#33#46#0#PHP" expanded="true" />
+                <element signature="e#1054#1074#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,12 +84,12 @@
         <option value="$PROJECT_DIR$/app/Work.php" />
         <option value="$PROJECT_DIR$/resources/views/works/create.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_30_033106_add_link_to_works_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/works/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/works/_form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/works/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/works/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/WorkController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/WorkTest.php" />
+        <option value="$PROJECT_DIR$/resources/views/works/index.blade.php" />
       </list>
     </option>
   </component>
@@ -1405,27 +1405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/works/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4909091">
-          <caret line="25" column="84" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
-          <folding>
-            <marker date="1567136010586" expanded="true" signature="45:1408" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="68:1405" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="101:167" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="269:1343" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="357:1296" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="399:1269" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="445:814" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="482:627" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="663:779" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="919:1203" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="1004:1164" placeholder="..." />
-            <marker date="1567136010586" expanded="true" signature="1058:1070" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/works/_form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3551515">
@@ -1587,7 +1566,31 @@
         <state vertical-scroll-proportion="0.36716792">
           <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
           <folding>
-            <element signature="e#33#46#0#PHP" expanded="true" />
+            <marker date="1567136633269" expanded="true" signature="37:214" placeholder="..." />
+            <marker date="1567136633269" expanded="true" signature="247:2454" placeholder="{...}" />
+            <marker date="1567136633269" expanded="true" signature="353:648" placeholder="{...}" />
+            <marker date="1567136633269" expanded="true" signature="383:589" placeholder="..." />
+            <marker date="1567136633269" expanded="true" signature="657:743" placeholder=" A sanity test to make sure test DB is working ..." />
+            <marker date="1567136633269" expanded="true" signature="788:940" placeholder="{...}" />
+            <marker date="1567136633269" expanded="true" signature="876:932" placeholder="..." />
+            <marker date="1567136633269" expanded="true" signature="886:931" placeholder="..." />
+            <marker date="1567136633269" expanded="true" signature="995:1062" placeholder="{...}" />
+            <marker date="1567136633269" expanded="true" signature="1111:1346" placeholder="{...}" />
+            <marker date="1567136633269" expanded="true" signature="1392:1534" placeholder="{...}" />
+            <marker date="1567136633269" expanded="true" signature="1583:1673" placeholder="{...}" />
+            <marker date="1567136633269" expanded="true" signature="1717:1922" placeholder="{...}" />
+            <marker date="1567136633269" expanded="true" signature="1969:2170" placeholder="{...}" />
+            <marker date="1567136633269" expanded="true" signature="2214:2452" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/works/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20363636">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="e#1054#1074#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
