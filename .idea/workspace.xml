@@ -25,12 +25,12 @@
       <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0521212">
-              <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.69454545">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding>
                 <element signature="e#865#903#0#HTML" expanded="true" />
-                <element signature="e#1278#1298#0#HTML" expanded="true" />
-                <element signature="e#2791#2811#0#HTML" expanded="true" />
+                <element signature="e#1316#1336#0#HTML" expanded="true" />
+                <element signature="e#2884#2904#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,7 +41,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_26_012341_add_role_to_users_table.php" />
@@ -80,7 +79,6 @@
         <option value="$PROJECT_DIR$/resources/views/works/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/works/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/WorkController.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/WorkTest.php" />
         <option value="$PROJECT_DIR$/resources/views/works/index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_30_101427_create_categories_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_30_101427_create_tags_table.php" />
@@ -88,9 +86,11 @@
         <option value="$PROJECT_DIR$/app/Work.php" />
         <option value="$PROJECT_DIR$/app/Tag.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ExampleTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/BlogTest.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/WorkTest.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/storage/logs/laravel-2019-08-30.log" />
         <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
       </list>
     </option>
@@ -201,6 +201,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ryanmurray" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ryanmurray" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1368,30 +1386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/WorkTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36716792">
-          <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
-          <folding>
-            <marker date="1567136633269" expanded="true" signature="37:214" placeholder="..." />
-            <marker date="1567136633269" expanded="true" signature="247:2454" placeholder="{...}" />
-            <marker date="1567136633269" expanded="true" signature="353:648" placeholder="{...}" />
-            <marker date="1567136633269" expanded="true" signature="383:589" placeholder="..." />
-            <marker date="1567136633269" expanded="true" signature="657:743" placeholder=" A sanity test to make sure test DB is working ..." />
-            <marker date="1567136633269" expanded="true" signature="788:940" placeholder="{...}" />
-            <marker date="1567136633269" expanded="true" signature="876:932" placeholder="..." />
-            <marker date="1567136633269" expanded="true" signature="886:931" placeholder="..." />
-            <marker date="1567136633269" expanded="true" signature="995:1062" placeholder="{...}" />
-            <marker date="1567136633269" expanded="true" signature="1111:1346" placeholder="{...}" />
-            <marker date="1567136633269" expanded="true" signature="1392:1534" placeholder="{...}" />
-            <marker date="1567136633269" expanded="true" signature="1583:1673" placeholder="{...}" />
-            <marker date="1567136633269" expanded="true" signature="1717:1922" placeholder="{...}" />
-            <marker date="1567136633269" expanded="true" signature="1969:2170" placeholder="{...}" />
-            <marker date="1567136633269" expanded="true" signature="2214:2452" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_30_101427_create_tags_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13575758">
@@ -1479,22 +1473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52484846">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding>
-            <marker date="1567161342545" expanded="true" signature="9:387" placeholder="..." />
-            <marker date="1567161342545" expanded="true" signature="417:600" placeholder="..." />
-            <marker date="1567161342545" expanded="true" signature="433:599" placeholder="..." />
-            <marker date="1567161342545" expanded="true" signature="555:596" placeholder="..." />
-            <marker date="1567161342545" expanded="true" signature="556:595" placeholder="..." />
-            <marker date="1567161342545" expanded="true" signature="614:666" placeholder="..." />
-            <marker date="1567161342545" expanded="true" signature="635:665" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/BlogTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72848487">
@@ -1560,14 +1538,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/WorkTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8934837">
+          <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+          <folding>
+            <marker date="1567162117366" expanded="true" signature="37:214" placeholder="..." />
+            <marker date="1567162117366" expanded="true" signature="247:2588" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="353:648" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="383:589" placeholder="..." />
+            <marker date="1567162117366" expanded="true" signature="657:743" placeholder=" A sanity test to make sure test DB is working ..." />
+            <marker date="1567162117366" expanded="true" signature="788:940" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="876:932" placeholder="..." />
+            <marker date="1567162117366" expanded="true" signature="886:931" placeholder="..." />
+            <marker date="1567162117366" expanded="true" signature="995:1062" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="1111:1346" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="1392:1534" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="1583:1673" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="1717:1922" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="1969:2170" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="2214:2452" placeholder="{...}" />
+            <marker date="1567162117366" expanded="true" signature="2499:2586" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42303032">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <marker date="1567162224661" expanded="true" signature="9:387" placeholder="..." />
+            <marker date="1567162224661" expanded="true" signature="417:573" placeholder="..." />
+            <marker date="1567162224661" expanded="true" signature="433:572" placeholder="..." />
+            <marker date="1567162224661" expanded="true" signature="528:569" placeholder="..." />
+            <marker date="1567162224661" expanded="true" signature="529:568" placeholder="..." />
+            <marker date="1567162224661" expanded="true" signature="587:639" placeholder="..." />
+            <marker date="1567162224661" expanded="true" signature="608:638" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-08-30.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0521212">
-          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.69454545">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
             <element signature="e#865#903#0#HTML" expanded="true" />
-            <element signature="e#1278#1298#0#HTML" expanded="true" />
-            <element signature="e#2791#2811#0#HTML" expanded="true" />
+            <element signature="e#1316#1336#0#HTML" expanded="true" />
+            <element signature="e#2884#2904#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

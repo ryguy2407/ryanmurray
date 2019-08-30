@@ -98,5 +98,11 @@ class WorkTest extends TestCase
         $response->assertStatus(200);
         $response->assertSee($work->title);
     }
+
+    public function testWorksLoadOnHomePage()
+    {
+        $response = $this->get('/');
+        $response->assertStatus(200);
+    }
 }
 

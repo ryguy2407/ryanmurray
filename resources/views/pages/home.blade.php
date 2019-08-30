@@ -26,21 +26,23 @@
 
     <div class="row">
 
-        @foreach($tag->works as $work)
-            <div class="col-lg">
-                <div class="card">
-                    <a href="{{ route('work.show', $work->slug) }}">
-                        <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}" class="mb-5 rounded mx-auto d-block">
-                    </a>
-                    <div class="p-4">
-                        <h3 class="text-center">{{ $work->title }}</h3>
-                        <p>
-                            @parsedown($work->excerpt($work->content))
-                        </p>
+        @if($tag)
+            @foreach($tag->works as $work)
+                <div class="col-lg">
+                    <div class="card">
+                        <a href="{{ route('work.show', $work->slug) }}">
+                            <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}" class="mb-5 rounded mx-auto d-block">
+                        </a>
+                        <div class="p-4">
+                            <h3 class="text-center">{{ $work->title }}</h3>
+                            <p>
+                                @parsedown($work->excerpt($work->content))
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
+            @endforeach
+        @endif
     </div>
 
     <div class="text-center mt-5">
