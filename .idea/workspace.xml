@@ -22,13 +22,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4909091">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.3212121">
+              <caret line="33" column="117" selection-start-line="33" selection-start-column="117" selection-end-line="33" selection-end-column="117" />
               <folding>
-                <element signature="e#7#389#0#PHP" expanded="true" />
+                <element signature="e#865#903#0#HTML" expanded="true" />
+                <element signature="e#1316#1336#0#HTML" expanded="true" />
+                <element signature="e#2884#2904#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +90,8 @@
         <option value="$PROJECT_DIR$/tests/Feature/BlogTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/WorkTest.php" />
         <option value="$PROJECT_DIR$/storage/logs/laravel-2019-08-30.log" />
-        <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
       </list>
     </option>
   </component>
@@ -1569,45 +1571,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69454545">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <marker date="1567162304129" expanded="true" signature="45:3194" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="68:948" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="222:937" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="257:779" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="296:760" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="812:922" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="872:902" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="1070:1843" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="1169:1793" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="1208:1770" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="1281:1454" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="1323:1335" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="1496:1743" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="1604:1712" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="1879:1998" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="2162:3148" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="2242:3109" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="2280:3086" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="2322:2663" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="2355:2492" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="2524:2632" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="2760:3028" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="2841:2993" placeholder="..." />
-            <marker date="1567162304129" expanded="true" signature="2891:2903" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4909091">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
+            <marker date="1567162555878" expanded="true" signature="9:387" placeholder="..." />
+            <marker date="1567162555878" expanded="true" signature="417:600" placeholder="..." />
+            <marker date="1567162555878" expanded="true" signature="433:599" placeholder="..." />
+            <marker date="1567162555878" expanded="true" signature="555:596" placeholder="..." />
+            <marker date="1567162555878" expanded="true" signature="556:595" placeholder="..." />
+            <marker date="1567162555878" expanded="true" signature="614:666" placeholder="..." />
+            <marker date="1567162555878" expanded="true" signature="635:665" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3212121">
+          <caret line="33" column="117" selection-start-line="33" selection-start-column="117" selection-end-line="33" selection-end-column="117" />
+          <folding>
+            <element signature="e#865#903#0#HTML" expanded="true" />
+            <element signature="e#1316#1336#0#HTML" expanded="true" />
+            <element signature="e#2884#2904#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

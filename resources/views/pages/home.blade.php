@@ -31,7 +31,7 @@
                 <div class="col-lg">
                     <div class="card">
                         <a href="{{ route('work.show', $work->slug) }}">
-                            <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}" class="mb-5 rounded mx-auto d-block">
+                            <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}" class="mb-2 rounded mx-auto d-block">
                         </a>
                         <div class="p-4">
                             <h3 class="text-center">{{ $work->title }}</h3>
