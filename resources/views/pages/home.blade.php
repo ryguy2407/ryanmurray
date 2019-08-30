@@ -15,7 +15,7 @@
                 </p>
             </div>
             <div class="col-lg">
-                <img src="/img/graphic.png" alt="" style="width: 100%;margin-top: -40px;">
+                <img src="/img/graphic.png" alt="" style="width: 100%;">
             </div>
         </div>
     </div>
