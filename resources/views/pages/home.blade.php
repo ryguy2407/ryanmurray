@@ -22,13 +22,13 @@
 
     <hr class="my-5">
 
-    <h2 class="text-center mb-5">Here is some sites I've worked on...</h2>
+    <h2 class="text-center mb-5">Here are some sites I've worked on...</h2>
 
     <div class="row">
 
         @if($tag)
             @foreach($tag->works as $work)
-                <div class="col-lg">
+                <div class="col-lg mb-lg-2">
                     <div class="card">
                         <a href="{{ route('work.show', $work->slug) }}">
                             <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}" class="mb-2 rounded mx-auto d-block">
