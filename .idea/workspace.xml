@@ -26,11 +26,11 @@
         <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.23757575">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
               <folding>
                 <element signature="e#865#885#0#HTML" expanded="true" />
-                <element signature="e#1304#1324#0#HTML" expanded="true" />
-                <element signature="e#2872#2892#0#HTML" expanded="true" />
+                <element signature="e#1312#1332#0#HTML" expanded="true" />
+                <element signature="e#2880#2900#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1590,11 +1590,11 @@
     <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23757575">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
           <folding>
             <element signature="e#865#885#0#HTML" expanded="true" />
-            <element signature="e#1304#1324#0#HTML" expanded="true" />
-            <element signature="e#2872#2892#0#HTML" expanded="true" />
+            <element signature="e#1312#1332#0#HTML" expanded="true" />
+            <element signature="e#2880#2900#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
