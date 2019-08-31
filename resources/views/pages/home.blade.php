@@ -28,7 +28,7 @@
 
         @if($tag)
             @foreach($tag->works as $work)
-                <div class="col-lg mb-4 mb-md-0">
+                <div class="col-lg mb-4 mb-lg-0">
                     <div class="card">
                         <a href="{{ route('work.show', $work->slug) }}">
                             <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}" class="mb-2 rounded mx-auto d-block">
