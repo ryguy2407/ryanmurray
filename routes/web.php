@@ -12,9 +12,10 @@
 */
 
 //STATIC PAGES
-Route::get('/', function(){
+Route::get('/', function() {
 	$posts = \App\Blog::paginate(8);
 	$tag = \App\Tag::where('name', 'Featured')->first();
+
 	return view('pages.home')->with([
 		'posts' => $posts,
 		'tag' => $tag
@@ -23,6 +24,8 @@ Route::get('/', function(){
 Route::get('/about', function(){
 	return view('pages.about');
 });
+
+Route::get('/img/{path}', 'ImageController@show')->where('path', '.*')->name('image.show');
 
 //Auth Routes
 Auth::routes();

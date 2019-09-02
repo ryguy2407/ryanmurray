@@ -24,7 +24,7 @@
                             @if($work->featured_image)
                                 <div class="col">
                                     <a href="{{ route('work.show', $work->slug) }}">
-                                        <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}">
+                                        <img style="width: 100%;" src="{{ route('image.show', $work->featured_image) }}?w=1200&fit=crop" class="mb-2 rounded mx-auto d-block">
                                     </a>
                                 </div>
                             @endif

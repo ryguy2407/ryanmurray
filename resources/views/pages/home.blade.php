@@ -31,7 +31,7 @@
                 <div class="col-lg mb-4 mb-lg-0">
                     <div class="card">
                         <a href="{{ route('work.show', $work->slug) }}">
-                            <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}" class="mb-2 rounded mx-auto d-block">
+                            <img style="width: 100%;" src="{{ route('image.show', $work->featured_image) }}?w=1200&fit=crop" class="mb-2 rounded mx-auto d-block">
                         </a>
                         <div class="p-4">
                             <h3 class="text-center">{{ $work->title }}</h3>
@@ -70,7 +70,7 @@
                         @if($post->featured_image)
                             <div class="col">
                                 <a href="{{ route('blog.show', $post->slug) }}">
-                                    <img style="width: 100%;" src="{{ asset('storage/'.$post->featured_image) }}">
+                                    <img style="width: 100%;" src="{{ route('image.show', $post->featured_image) }}?w=500&h=500&fit=crop">
                                 </a>
                             </div>
                         @endif

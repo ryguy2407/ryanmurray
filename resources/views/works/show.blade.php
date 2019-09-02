@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <a href="@if($work->link){{ $work->link }}@endif" target="_blank">
-                        <img style="width: 100%;" src="{{ asset('storage/'.$work->featured_image) }}" class="mb-5 rounded mx-auto d-block">
+                        <img style="width: 100%;" src="{{ route('image.show', $work->featured_image) }}?w=1200&fit=crop" class="mb-5 rounded mx-auto d-block">
                     </a>
                 </div>
             </div>
