@@ -30,7 +30,7 @@
                             @if($post->featured_image)
                                 <div class="col">
                                     <a href="{{ route('blog.show', $post->slug) }}">
-                                        <img style="width:100%;" src="{{ route('image.show', $post->featured_image) }}?w=500&h=500&fit=crop"
+                                        <img class="mb-2 rounded mx-auto d-block" style="width:100%;" src="{{ route('image.show', $post->featured_image) }}?w=500&h=500&fit=crop"/>
                                     </a>
                                 </div>
                             @endif

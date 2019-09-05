@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c60991f6-11fb-4c67-9ced-e4c1238fafbc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/works/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/works/index.blade.php" />
     </list>
     <ignored path="ryanmurray.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +27,11 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/blog/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6109091">
-              <caret line="32" column="130" selection-start-line="32" selection-start-column="130" selection-end-line="32" selection-end-column="130" />
+            <state vertical-scroll-proportion="0.42303032">
+              <caret line="32" column="179" selection-start-line="32" selection-start-column="179" selection-end-line="32" selection-end-column="179" />
               <folding>
                 <element signature="e#56#103#0#HTML" expanded="true" />
-                <element signature="e#1239#1258#0#HTML" expanded="true" />
+                <element signature="e#1276#1295#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1343,8 +1341,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/works/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3890909">
-          <caret line="32" column="131" selection-start-line="32" selection-start-column="120" selection-end-line="32" selection-end-column="131" />
+        <state vertical-scroll-proportion="0.4569697">
+          <caret line="32" column="177" selection-start-line="32" selection-start-column="149" selection-end-line="32" selection-end-column="177" />
           <folding>
             <marker date="1567657519413" expanded="true" signature="45:1689" placeholder="..." />
             <marker date="1567657519413" expanded="true" signature="63:102" placeholder="..." />
@@ -1366,11 +1364,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/blog/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6109091">
-          <caret line="32" column="130" selection-start-line="32" selection-start-column="130" selection-end-line="32" selection-end-column="130" />
+        <state vertical-scroll-proportion="0.42303032">
+          <caret line="32" column="179" selection-start-line="32" selection-start-column="179" selection-end-line="32" selection-end-column="179" />
           <folding>
             <element signature="e#56#103#0#HTML" expanded="true" />
-            <element signature="e#1239#1258#0#HTML" expanded="true" />
+            <element signature="e#1276#1295#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
