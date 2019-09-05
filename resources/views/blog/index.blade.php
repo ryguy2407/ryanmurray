@@ -2,6 +2,12 @@
 
 @section('content')
 
+    <div style="position: absolute;top:20px;right:20px;">
+        @can('create', App\Blog::class)
+            <a class="btn btn-primary" href="{{ route('blog.create') }}">Add more posts</a>
+        @endcan
+    </div>
+
     <div class="pt-5">
         <h2 class="text-center">
             All posts
@@ -24,7 +30,7 @@
                             @if($post->featured_image)
                                 <div class="col">
                                     <a href="{{ route('blog.show', $post->slug) }}">
-                                        <img style="width: 100%;" src="{{ asset('storage/'.$post->featured_image) }}">
+                                        <img style="width:100%;" src="{{ route('image.show', $post->featured_image) }}?w=500&h=500&fit=crop"
                                     </a>
                                 </div>
                             @endif

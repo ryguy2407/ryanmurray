@@ -2,6 +2,12 @@
 
 @section('content')
 
+    <div style="position: absolute;top:20px;right:20px;">
+        @can('create', App\Work::class)
+            <a class="btn btn-primary" href="{{ route('work.create') }}">Add more work</a>
+        @endcan
+    </div>
+
     <div class="pt-5">
         <h2 class="text-center">
             A recent sample of projects I've worked on
