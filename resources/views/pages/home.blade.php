@@ -11,8 +11,11 @@
                     In that time I've seen many changes in our industry, but as with many professions,
                     the fundamentals always remain the same. I strive to create code that fits the job at hand perfectly. I believe this makes
                     for code that is easier to maintain, faster and does just the right amount of
-                    heavy lifting. Why build a full feature CMS for a five page site...am I right?
+                    heavy lifting.
                 </p>
+                <div class="text-center mt-5">
+                    <a href="{{ secure_url('work') }}" class="btn btn-primary text-white">See all of my recent work</a>
+                </div>
             </div>
             <div class="col-lg">
                 <img src="/img/graphic.png" alt="" style="width: 100%;">
